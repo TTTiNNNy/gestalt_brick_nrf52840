@@ -1,0 +1,19 @@
+[package]
+name = "gestalt_brick_nrf52840"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nrf52840-pac = {version = "*", features = ["rt"]}
+
+
+[dependencies.gestalt_reference_api]
+path = "../gestalt_reference_api"
+
+[dependencies.gestalt_brick]
+path = "../gestalt_brick"
+
+[dependencies.gestalt_hal_nrf52840]
+path = "../gestalt_hal_nrf52840"
